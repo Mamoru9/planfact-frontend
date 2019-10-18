@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Planfact Frontend</title>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+     <div class="main">
+        <div class="header">
+            <div>
+                <div class="oval">
+                    <img src="img/flex.png" />
+                </div>
+                <div class="devial">
+                    Devial Kit
+                </div>
+            </div>
+            <div>
+                <div class="free"></div>
+                <div class="greenFree">
+                        <div class="button">FREE</div>
+                </div>
+                <div class="link">
+                    See our PRO version fo more design components & coded in React follow this link: https://devias.io/products/devias-kit-pro
+                </div>
+            </div>
+           
+            <div class="icon">
+                <div class="kolokol">
+                    <img src="img/kolokol.png"/>
+                    <img src="img/outline-contact_support-24px.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class=afroAmerikanecRoman>
+                <img src="img/oval.png" />
+            </div>
+            <div class="nameRoman">Roman Kutepov</div>
+            <div class="miniName">Brain Director</div>
+            <div class="line"></div>
+            <div class="miniMenu">
+                <div class="dash">
+                    <div><img src="img/dash.png"/></div>
+                    <div>Dashboard</div>
+                </div>
+                <div class="dash">
+                    <div><img src="img/Users.png" /></div>
+                    <div>Users</div>
+                </div>
+                <div class="dash">
+                    <div><img src="img/product.png"/></div>
+                    <div>Products</div>
+                </div>
+                <div class="dash">        
+                    <div><img src="img/authen.png"/></div>
+                    <div>Authentication</div>
+                </div>
+                <div class="dash">
+                    <div><img src="img/Typography.png"/></div>
+                    <div>Typography</div>
+                </div>
+                <div class="dash">
+                    <div><img src="img/imag.png"/></div>
+                    <div>Icons & Images</div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="miniSup">Support</div>
+            <div class="dash">
+                <div><img src="img/sup.png"/></div>
+                <div>Support</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="table">
+                <div id="but_new_elem">
+                    <form>
+                        <a href="javascript:PopUpNew()">
+                            <input type="button" value="New element">
+                        </a>
+                    </form>
+                </div>
+                <table id="myTable" class="mdl-data-table">
+          
+                </table>
+                <div id="loader-wrapper">
+                        <div id="loader"></div>
+                </div>
+            </div>
+            <div class="b-popup" id="popup">
+                    <div class="b-popup-content">
+                        <div class="headProf"><div>Basic Profile</div>
+                            <div class="minTextProf">The information can be edited from your profile page</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="edit">
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="first_name"class="first_name" placeholder="First Name" id="first_name">
+                                    <div class="text1" id="text1" >First Name</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="last_name" class="last_name" placeholder="Last Name" id="last_name">
+                                    <div class="text2" id="text2">Last name</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="email" name="email"class="email" placeholder="Email" id="email">
+                                    <div class="text3" id="text3" >Email</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="tel" name="phone"class="phone" placeholder="Phone" id="phone">
+                                    <div class="text4" id="text4" >Phone</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="country"class="country" placeholder="Country" id="country">
+                                    <div class="text5" id="text5" >Country</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="city"class="city" placeholder="City" id="city">
+                                    <div class="text6" id="text6" >City</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form>
+                                    <input type="submit" value="Save Settings" class="save">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="b-popup" id="popupnew">
+                <div class="b-popupnew">
+                    <div class="headAdd">Add new order</div>
+                    <div class="line"></div>
+                    <div class="edit">
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="new_first_name"class="new_first_name" placeholder="First Name" id="new_first_name">
+                                    <div class="text7" id="text7" >First Name</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="new_last_name" class="nwe_last_name" placeholder="Last Name" id="new_last_name">
+                                    <div class="text8" id="text8">Last name</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="email" name="new_email"class="new_email" placeholder="Email" id="new_email">
+                                    <div class="text9" id="text9" >Email</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="text" name="Status"class="Status" placeholder="Status" id="status">
+                                    <div class="text10" id="text10" >Status</div>
+                                </form>
+                            </div>
+                            <div>
+                                <form autocomplete="off">
+                                    <input type="date" name="date"class="date" placeholder="Date" id="Date">
+                                    <div class="text11" id="text11" >Date</div>
+                                </form>
+                            </div>        
+                            <div>
+                                <form>
+                                    <input type="button" value="Save Settings" class="save" id="save_new_elem">
+                                </form>
+                            </div>                  
+                        </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+                <div class="copyraiting">© Devias Io. 2019</div>
+                <div class="footerInfo">This is a free version of an end product which will be launched soon. If you want to get a free copy of the end product subscribe to our personal email list</div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
