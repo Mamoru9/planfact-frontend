@@ -643,7 +643,7 @@ input{
     .text5{
         position: absolute;
         top:368px;
-        left: 350px;
+        left: 450px;
         background-color: white;
         width: 60px;
         color: #1a73e8;
@@ -656,6 +656,55 @@ input{
         left: 850px;
         background-color: white;
         width: 40px;
+        color: #1a73e8;
+        text-align: center;
+    }
+    .text7{
+        position: absolute;
+        top:180px;
+        left: 450px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text8{
+        position: absolute;
+        top:180px;
+        left: 850px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text9{
+        position: absolute;
+        top:274px;
+        left: 450px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text10{
+        position: absolute;
+        top:274px;
+        left: 850px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text11{
+        position: absolute;
+        top:368px;
+        left: 450px;
+        background-color: white;
+        width: 60px;
         color: #1a73e8;
         text-align: center;
     }
@@ -721,6 +770,55 @@ input{
         color: #1a73e8;
         text-align: center;
     }
+    .text7{
+        position: absolute;
+        top:180px;
+        left: 340px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text8{
+        position: absolute;
+        top:180px;
+        left: 740px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text9{
+        position: absolute;
+        top:274px;
+        left: 3400px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text10{
+        position: absolute;
+        top:274px;
+        left: 740px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text11{
+        position: absolute;
+        top:368px;
+        left: 340px;
+        background-color: white;
+        width: 60px;
+        color: #1a73e8;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1366px){
@@ -783,6 +881,55 @@ input{
         color: #1a73e8;
         text-align: center;
     }
+    .text7{
+        position: absolute;
+        top:180px;
+        left: 300px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text8{
+        position: absolute;
+        top:180px;
+        left: 700px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text9{
+        position: absolute;
+        top:274px;
+        left: 300px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text10{
+        position: absolute;
+        top:274px;
+        left: 700px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text11{
+        position: absolute;
+        top:368px;
+        left: 300px;
+        background-color: white;
+        width: 60px;
+        color: #1a73e8;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 1279px){
@@ -842,6 +989,55 @@ input{
         left: 660px;
         background-color: white;
         width: 40px;
+        color: #1a73e8;
+        text-align: center;
+    }
+    .text7{
+        position: absolute;
+        top:180px;
+        left: 260px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text8{
+        position: absolute;
+        top:180px;
+        left: 660px;
+        background-color: white;
+        width: 80px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text9{
+        position: absolute;
+        top:274px;
+        left: 260px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text10{
+        position: absolute;
+        top:274px;
+        left: 660px;
+        background-color: white;
+        width: 50px;
+        color: #1a73e8;
+        text-align: center;
+    }
+
+    .text11{
+        position: absolute;
+        top:368px;
+        left: 360px;
+        background-color: white;
+        width: 60px;
         color: #1a73e8;
         text-align: center;
     }
