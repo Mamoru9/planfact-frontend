@@ -1,7 +1,8 @@
 var table;
 $(document).ready(function(){
-    
+    //переменная last_id хранит последний id добавленного элемента в таблицу, что бы при добавлении id выдавался автоматически
     var last_id;
+    // переменная out хранит таблицу
     var out ='<thead> <tr> <th>Order ID</th> <th>Customer</th> <th>Date</th> <th>Status</th> <th>Email</th> <th>Actions</th> </tr> </thead>';
     $("#but_new_elem").hide();
     $("#popup").hide();
@@ -17,8 +18,7 @@ $(document).ready(function(){
     $("#text8").hide();
     $("#text9").hide();
     $("#text10").hide();
-    $.getJSON('https://raw.githubusercontent.com/planfact/frontend/master/MOCK_DATA.json', function(data){
-        
+    $.getJSON('https://raw.githubusercontent.com/planfact/frontend/master/MOCK_DATA.json', function(data){        
         $.each(data, function(key, val){
             out += '<tr>';
             out += '<td>'+ val.id + '</td>'+ '<td>'+ val.first_name + ' ' + val.last_name + '</td>' + '<td>'+ val.data + '</td>' + '<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png"/></a></td>';
@@ -100,6 +100,12 @@ $(document).ready(function(){
         newTable();
         $("#popupnew").hide();
     });
+    $("#close_popup").on("click", function(){
+        $("#popup").hide();
+    });
+    $("#close_new_elem").on("click", function(){
+        $("#popupnew").hide();
+    });
 });
 
 function PopUpShow(){
@@ -110,7 +116,7 @@ function PopUpNew(){
     $("#popupnew").show();
 }
 
-
+//функция newTable придаёт нормальный внешинй вид таблице, которая уже есть на странице
 function newTable(){
     setTimeout(function(){
         table=$('#myTable').DataTable( {

@@ -485,7 +485,7 @@ input{
     color: black;
 }
 
-
+/*резиновая вёрстка применяется только к элементам с атрибутом position: absolute;*/
 @media screen and (min-width: 1661px) and (max-width: 1920px)
 {
     .text1{
