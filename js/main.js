@@ -21,7 +21,7 @@ $(document).ready(function(){
     $.getJSON('https://raw.githubusercontent.com/planfact/frontend/master/MOCK_DATA.json', function(data){        
         $.each(data, function(key, val){
             out += '<tr>';
-            out += '<td>'+ val.id + '</td>'+ '<td>'+ val.first_name + ' ' + val.last_name + '</td>' + '<td>'+ val.data + '</td>' + '<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png"/></a></td>';
+            out += '<td>'+ val.id + '</td>'+ '<td>'+ val.first_name + ' ' + val.last_name + '</td>' + '<td>'+ val.data + '</td>' + '<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td>';
             out += '</tr>';
             last_id=val.id;
         });
@@ -94,7 +94,7 @@ $(document).ready(function(){
         $("#but_new_elem").hide();
         table.destroy();
         last_id++;
-        out+='<tr><td>'+last_id+'</td><td>'+document.getElementById("new_first_name").value +' '+document.getElementById("new_last_name").value+'</td><td>'+document.getElementById("Date").value+'</td><td>'+document.getElementById("status").value+'</td><td>'+document.getElementById("new_email").value+'</td><td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png"/></a></td></tr>';
+        out+='<tr><td>'+last_id+'</td><td>'+document.getElementById("new_first_name").value +' '+document.getElementById("new_last_name").value+'</td><td>'+document.getElementById("Date").value+'</td><td>'+document.getElementById("status").value+'</td><td>'+document.getElementById("new_email").value+'</td><td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td></tr>';
         $("#myTable").html(out);
         $("#loader-wrapper").show();
         newTable();
@@ -105,6 +105,9 @@ $(document).ready(function(){
     });
     $("#close_new_elem").on("click", function(){
         $("#popupnew").hide();
+    });
+    $("#create_new_elem").on("click", function(){
+        PopUpNew();
     });
 });
 
