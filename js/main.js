@@ -101,7 +101,14 @@ $(document).ready(function(){
         $("#but_new_elem").hide();
         table.destroy();
         last_id++;
-        out+='<tr><td>'+last_id+'</td><td>'+document.getElementById("new_first_name").value +' '+document.getElementById("new_last_name").value+'</td><td>'+document.getElementById("Date").value+'</td><td>'+document.getElementById("status").value+'</td><td>'+document.getElementById("new_email").value+'</td><td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td></tr>';
+        out+='<tr><td>'+last_id+'</td><td>'+document.getElementById("new_first_name").value +' '+document.getElementById("new_last_name").value+'</td><td>'+document.getElementById("Date").value+'</td><td>';
+        if (document.getElementById("status").value != "archive")
+        {
+            out+=document.getElementById("status").value+'</td><td>'+document.getElementById("new_email").value+'</td><td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td></tr>';
+        }
+        else{
+            out+=document.getElementById("status").value+'</td><td>'+document.getElementById("new_email").value+'</td><td><img src="img/dot.png"/> <img src="img/pen.png" alt="edit"/></td></tr>';
+        };
         $("#myTable").html(out);
         $("#loader-wrapper").show();
         newTable();
