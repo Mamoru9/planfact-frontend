@@ -122,7 +122,7 @@ function PopUpNew(){
 
 //функция newTable придаёт нормальный внешинй вид таблице, которая уже есть на странице
 function newTable(){
-    setTimeout(function(){
+    
         table=$('#myTable').DataTable( {
             columnDefs: [
                 {
@@ -134,5 +134,5 @@ function newTable(){
         $("#loader-wrapper").hide();
         $("#myTable").show();
         $("#but_new_elem").show();
-    }, 1500);
+    
 }
