@@ -22,7 +22,13 @@ $(document).ready(function(){
     $.getJSON('https://raw.githubusercontent.com/planfact/frontend/master/MOCK_DATA.json', function(data){        
         $.each(data, function(key, val){
             out += '<tr>';
-            out += '<td>'+ val.id + '</td>'+ '<td>'+ val.first_name + ' ' + val.last_name + '</td>' + '<td>'+ val.data + '</td>' + '<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td>';
+            out += '<td>'+ val.id + '</td>'+ '<td>'+ val.first_name + ' ' + val.last_name + '</td>' + '<td>'+ val.data + '</td>';
+            if (val.status!="archive"){
+                out+='<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <a href="javascript:PopUpShow()"><img src="img/pen.png" alt="edit"/></a></td>';
+            }
+            else{
+                out+='<td>'+ val.status + '</td>' + '<td>'+ val.email + '</td>' +'<td><img src="img/dot.png"/> <img src="img/pen.png" alt="edit"/></td>';
+            };
             out += '</tr>';
             last_id=val.id;
         });
